@@ -35,6 +35,7 @@ VALUES
 ('Katie', 'Wohl', 'kw@something.com', '123-456-7890', '123 some dr.', 'Nashville', 'TN', '12345', 'NSS'),
 ('Cooper', 'Nichols', 'cn@something.com', '098-765-4321', '321 some dr.', 'Nashville', 'TN', '12345', 'NSS');
 
+--Practice: Carnival 2.
 --insert to multiple tables and use join table for final insert
 --first insert
 INSERT INTO vehiclebodytypes(name)
@@ -61,5 +62,16 @@ INSERT INTO vehicles(vin, engine_type, vehicle_type_id, exterior_color, interior
 VALUES
 ('thxxwy06a', '4L', 35, 'White and orange', 'Black', 65000, 150000, 1000000, 1977);
 
+--Practice: Carnival 3.
+--insert employee first
+INSERT INTO employees(first_name, last_name, email_address, phone, employee_type_id)
+VALUES
+('Kennie', 'Maharg', 'kmaharge@com.com', '598-678-4885', 4);
+--then join to dealerships
+INSERT INTO dealershipemployees(employee_id, dealership_id)
+VALUES
+(1001, 1),
+(1001, 2),
+(1001, 3);
 
 
