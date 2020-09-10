@@ -29,6 +29,7 @@ CREATE TABLE Vehicles (
   FOREIGN KEY (fk_columns) 
   REFERENCES parent_table (parent_key_columns);
 
+--Practice: Carnival 1.
 --Insert multiple rows
 INSERT INTO customers(first_name, last_name, email, phone, street, city, state, zipcode, company_name)
 VALUES
@@ -74,4 +75,4 @@ VALUES
 (1001, 2),
 (1001, 3);
 
-
+--Group Project: Carnival Database
